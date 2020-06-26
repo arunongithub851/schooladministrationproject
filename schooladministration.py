@@ -2,7 +2,7 @@ import csv
 
 
 def write_in_to_csv(info_list):
-    with open("student_info.csv", "a", newline='') as csv_file: #Note: usin in 'w+' mode means it writes again and again. So use 'a' append mode
+    with open("student_info.csv", "a", newline='') as csv_file: 
         w=csv.writer(csv_file)
         if csv_file.tell()==0:
             w.writerow(["Name",'age',"Contact",'Email_id'])
